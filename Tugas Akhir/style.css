@@ -1,0 +1,444 @@
+* {
+    line-height: 20px;
+    font-size: 15px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #dedede;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.layar-dalam {
+    width: 1000px;
+    margin: auto;
+}
+
+.layar-penuh {
+    width: 100%;
+}
+
+nav {
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+
+
+nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+}
+
+nav .logo img {
+    padding-top:10%;
+    vertical-align: middle;
+    width: 120px;
+}
+
+nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 60opx;
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #004904;
+}
+
+/* pengaturan header */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+header video {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+
+header .intro {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+
+header .intro h3 {
+    font-size: 50px;
+    margin-bottom: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.tombol {
+    background-color: cadetblue;
+    height: 40px;
+    line-height: 42px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0px 20px 0px 20px;
+    font-size: 16px;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 50%;
+    z-index: -1;
+}
+
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #fff;
+}
+
+section {
+    padding: 30px 0px 50px 0px;
+}
+
+section h3 {
+    font-size: 30px;
+}
+
+section h3::after {
+    content: "";
+    border-bottom: 5px solid cadetblue;
+    width: 54px;
+    display: block;
+    margin: 20px auto;
+}
+
+#aboutus,
+#gallery {
+    padding-top: 60px;
+    text-align: center;
+}
+
+section p.kolom {
+    font-style: italic;
+    font-size: 18px;
+    color: #ababab;
+}
+
+section .konten-isi p {
+    font-style: normal;
+}
+
+nav.putih {
+    background-color: #fff;
+}
+
+nav.putih .tombol-menu .garis {
+    background-color: #333;
+}
+
+nav.putih ul li a {
+    color: #333;
+}
+
+nav.putih ul li a:hover {
+    color: #b1b1b1;
+}
+
+nav .logo img.hitam {
+    display: none;
+}
+
+section.abuabu {
+    background-color: #f5f6f6;
+}
+
+.tim img {
+    width: 100%;
+    box-shadow: 0px -10px 30px #ccc;
+    border-radius: 5px;
+}
+
+.tim {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#aboutus {
+    text-align: center;
+    background-color: #fff;
+}
+
+
+.tim h6 {
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tim div {
+    text-align: center;
+    width: 26%;
+    margin-top: 24px;
+}
+
+.gallery .area {
+    width: 47%;
+    box-shadow: 0px -10px 30px #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card img {
+    height: 200px;
+    border-radius: 5%;
+    margin-top: 8px;
+}
+
+.card {
+    align-items: center;
+}
+
+.zoom-in {
+    transition: transform 0.3s;
+}
+
+.zoom-in:hover {
+    transform: scale(1.06);
+}
+
+.card-title {
+    background-color: cadetblue;
+    height: 40px;
+    line-height: 42px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0px 20px 0px 20px;
+    font-size: 16px;
+}
+
+.card h5 {
+    color: #000;
+    text-decoration: none;
+}
+
+footer {
+    background-color: cadetblue;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+/* halaman artikel dan kontak */
+.heading-artikel-kontak {
+    text-align: center;
+    z-index: 9999;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+
+/* halaman article */
+.isi-heading-artikel h1 {
+    padding-top: 90px;
+    padding-bottom: 4px;
+}
+
+.isi-heading-artikel img{
+    width: 50%;
+    height: 50%;
+    margin: 15px;
+    border-radius: 3%;
+}
+
+.isi-artikel p{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+@media (max-width: 850px) {
+
+    .isi-heading-artikel img{
+        width: 80%;
+        height: 50%;
+        margin: 15px;
+        border-radius: 4%;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .isi-heading-artikel img{
+        width: 85%;
+        height: 50%;
+        margin: 15px;
+        border-radius: 5%;
+    }
+
+}
+
+
+
+/* halaman kontak */
+.heading-kontak-artikel{
+    text-align: center;
+}
+
+.isi-heading-kontak h1{
+    padding-top: 150px;
+}
+
+.isi-heading-kontak h5 {
+    margin-top: 19px;
+
+}
+
+.pesan-box {
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pesan-box label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.pesan-box input[type="email"],
+.pesan-box textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+
+.pesan-box .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pesan-box .submit-btn:hover{
+    color: white;
+    background-color: black;
+}
+
+@media (min-width: 768px) {
+    
+
+    .pesan-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pesan-box .pesan {
+        flex: 0 0 60%;
+        margin-left: 20%;
+    }
+}
+
+/* media screen */
+@media screen and (max-width: 991.98px) {
+    .layar-dalam {
+        width: 90%;
+    }
+
+    nav .menu ul {
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    nav .menu ul li {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
+        line-height: 40px;
+    }
+
+    nav .menu ul li a {
+        color: #333;
+    }
+
+    .tombol-menu {
+        display: flex;
+    }
+}
